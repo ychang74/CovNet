@@ -55,7 +55,7 @@ def embedding_layer(x, x1, is_plus_embedding):
 
 
 ###############################################################
-# BaselineCnn Embedding
+# BaselineCnn Transfer (embeddings)
 
 class BaselineCnnEmbedding(nn.Module):
     def __init__(self, class_num, model_path, embedding_layer):
@@ -162,7 +162,7 @@ class BaselineCnnEmbedding(nn.Module):
 
 
 ###############################################################
-# VGG Embedding
+# VGG Transfer (embeddings)
 
 class VggishEmbedding(nn.Module):
     def __init__(self, classes_num, model_path, embedding_layer):
@@ -241,7 +241,8 @@ class VggishEmbedding(nn.Module):
 
 
 #################################################################
-# ResNet Embedding
+# ResNet Transfer (embeddings)
+
 class ResNetEmbedding(nn.Module):
     def __init__(self, classes_num, model_path, embedding_layer):
         super(ResNetEmbedding, self).__init__()
@@ -321,7 +322,7 @@ class ResNetEmbedding(nn.Module):
 
 
 #################################################################
-# MobileNet Embedding
+# MobileNet Transfer (embeddings)
 
 class MobileNetEmbedding(nn.Module):
     def __init__(self, classes_num, model_path, embedding_layer):
