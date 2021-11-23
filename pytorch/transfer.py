@@ -45,7 +45,7 @@ def get_trainable_layers(model_name, layer):
 
 
 #################################################################
-# Baseline Transfer
+# Baseline Transfer (parameters)
 
 class BaselineCnnTransfer(nn.Module):
     def __init__(self, classes_num, model_path, layer):
@@ -76,7 +76,7 @@ class BaselineCnnTransfer(nn.Module):
 
 
 ###############################################################
-# VGG Transfer
+# VGG Transfer (parameters)
 
 class VggishTransfer(nn.Module):
     def __init__(self, classes_num, model_path, layer):
@@ -107,7 +107,7 @@ class VggishTransfer(nn.Module):
 
 
 #################################################################
-# ResNet Transfer
+# ResNet Transfer (parameters)
 
 class ResNetTransfer(nn.Module):
     def __init__(self, classes_num, model_path, layer):
@@ -137,7 +137,7 @@ class ResNetTransfer(nn.Module):
 
 
 #################################################################
-# MobileNet Transfer 
+# MobileNet Transfer (parameters)
 
 
 class MobileNetTransfer(nn.Module):
